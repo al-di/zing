@@ -1,6 +1,8 @@
 .pane
 {
+
   background-color: orange;
+
   color:white;
   font-size: normal;
 
@@ -9,7 +11,7 @@
 h1, em
 {
   font-weight: bold;
-  font-style: normal;
+  font-style: small;
 }
 
 body
