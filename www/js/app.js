@@ -9,7 +9,7 @@ angular.module('zing', ['ionic'])
 
   $scope.zeit = new Date().toLocaleString();
   $scope.add = function() {
-    alert("nööö kein bog")
+    alert("friedrich ist dumm")
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope
