@@ -6,10 +6,17 @@
 angular.module('zing', ['ionic'])
 
 .controller('IndexCtrl', function($scope, $ionicModal) {
-
+  $scope.eintraege = {
+    mo: [],
+    di: [],
+    mit: [],
+    do: [],
+    fr: [],
+  };
   $scope.zeit = new Date().toLocaleString();
   $scope.add = function(input) {
-alert(input)
+   $scope.eintraege.mo[1] = input;
+   $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope
