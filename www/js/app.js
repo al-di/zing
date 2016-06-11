@@ -8,6 +8,9 @@ angular.module('zing', ['ionic'])
 .controller('IndexCtrl', function($scope, $ionicModal) {
 
   $scope.zeit = new Date().toLocaleString();
+  $scope.add = function() {
+    alert("Hallo")
+  }
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope
   }).then(function(modal) {
