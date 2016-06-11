@@ -3,7 +3,7 @@
   background-color: orange;
   color:white;
   font-size: normal;
-  font-family: Georgia, "Trebuchet MS", Verdana, sans-serif;
+
 }
 
 h1, em
@@ -18,4 +18,7 @@ body
 }
 td
 {border:1px solid black;
-width: 16.6%;}
+width: 16.6%;
+padding: 5px;
+
+}
