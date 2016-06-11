@@ -6,7 +6,10 @@
 angular.module('zing', ['ionic'])
 
 .controller('IndexCtrl', function($scope, $ionicModal) {
+<<<<<<< HEAD
   $scope.zeit = new Date().toLocaleString();
+=======
+>>>>>>> 949871940c99e35fb60ffac33ea6617b4b08ccb4
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope
   }).then(function(modal) {
