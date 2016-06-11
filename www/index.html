@@ -21,18 +21,8 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
   </head>
-  <body ng-app="starter">
-    <script id="my-modal.html" type="text/ng-template">
-      <ion-modal-view>
-        <ion-header-bar>
-          <h1 class="title">My Modal title</h1>
-        </ion-header-bar>
-        <ion-content>
-          Hello!
-        </ion-content>
-      </ion-modal-view>
-    </script>
-    <ion-pane>
+  <body ng-app="zing" ng-controller="IndexCtrl">
+    <ion-view>
       <table style="width:100%">
         <tr>
           <th>Stunden</th>
@@ -46,7 +36,7 @@
         <tr>
 
           <td>1.</td>
-          <td></td>
+          <td><a ng-click="modal.show()">+</a></td>
           <td></td>
           <td></td>
           <td></td>
@@ -94,6 +84,6 @@
           <td></td>
         </tr>
       </table>
-    </ion-pane>
+    </ion-view>
   </body>
 </html>
