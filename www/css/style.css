@@ -1,1 +1,18 @@
-/* Empty. Add your own CSS if you like */
+.pane
+{
+  background-color: orange;
+  color:green;
+  font-size: normal;
+  font-family: Georgia, "Trebuchet MS", Verdana, sans-serif;
+}
+
+h1, em
+{
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1
+{
+  font-size: 250%;
+}
