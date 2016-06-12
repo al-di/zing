@@ -1,7 +1,10 @@
 .pane
 {
 
-  background-color: orange;
+  background-image: url(alogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 
   color:black;
   font-size: normal;
