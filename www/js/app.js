@@ -18,9 +18,9 @@ angular.module('zing', ['ionic'])
     stunde: null,
     input: null,
   }
-  $scope.zeit = new Date().toLocaleString();
+  $scope.ze
+  it = new Date().toLocaleString();
   $scope.clicko = function(tag, stunde) {
-    $scope.fach.input = "";
     $scope.fach.tag = tag;
     $scope.fach.stunde = stunde;
     $scope.modal.show();
