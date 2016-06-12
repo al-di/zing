@@ -13,9 +13,19 @@ angular.module('zing', ['ionic'])
     do: [],
     fr: [],
   };
+  $scope.fach = {
+    tag: null,
+    stunde: null,
+    input: null,
+  }
   $scope.zeit = new Date().toLocaleString();
+  $scope.clicko = function(tag, stunde) {
+    $scope.fach.tag = tag;
+    $scope.fach.stunde = stunde;
+    $scope.modal.show();
+  }
   $scope.add = function(input) {
-   $scope.eintraege.mo[1] = input;
+   $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = input;
    $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
