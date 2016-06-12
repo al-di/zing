@@ -13,6 +13,11 @@ angular.module('zing', ['ionic'])
     do: [],
     fr: [],
   };
+  $scope.fach = {
+    tag:null,
+    stunde:null,
+    input:null,
+  };
   $scope.zeit = new Date().toLocaleString();
   $scope.add = function(input) {
    $scope.eintraege.mo[1] = input;
