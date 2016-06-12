@@ -18,9 +18,15 @@ angular.module('zing', ['ionic'])
     stunde:null,
     input:null,
   };
+  $scope.clicko = function(tag, stunde) {
+    $scope.fach.tag = tag;
+    $scope.fach.stunde = stunde;
+    $scope.modal.show();
+  };
   $scope.zeit = new Date().toLocaleString();
   $scope.add = function(input) {
-   $scope.eintraege.mo[1] = input;
+    alert("friedrich ist dumm")
+   $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = input;
    $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
