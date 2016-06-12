@@ -18,8 +18,14 @@ angular.module('zing', ['ionic'])
     stunde: null,
     input: null,
   }
-  $scope.ze
-  it = new Date().toLocaleString();
+  $scope.zeit = new Date().toLocaleString();
+
+  setInterval(function() {
+    $scope.$apply(function() {
+      $scope.zeit = new Date().toLocaleString();
+    })
+  }, 500);
+
   $scope.clicko = function(tag, stunde) {
     $scope.fach.tag = tag;
     $scope.fach.stunde = stunde;
