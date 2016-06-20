@@ -14,10 +14,22 @@ angular.module('zing', ['ionic'])
     fr: [],
   };
   $scope.fach = {
+<<<<<<< HEAD
+    tag:null,
+    stunde:null,
+    input:null,
+  };
+  $scope.clicko = function(tag, stunde) {
+    $scope.fach.tag = tag;
+    $scope.fach.stunde = stunde;
+    $scope.modal.show();
+  };
+=======
     tag: null,
     stunde: null,
     input: null,
   }
+>>>>>>> dd9b139547e2763fa57554bf6a7500b37592f0d0
   $scope.zeit = new Date().toLocaleString();
 
   setInterval(function() {
@@ -32,6 +44,10 @@ angular.module('zing', ['ionic'])
     $scope.modal.show();
   }
   $scope.add = function(input) {
+<<<<<<< HEAD
+    alert("friedrich ist dumm")
+=======
+>>>>>>> dd9b139547e2763fa57554bf6a7500b37592f0d0
    $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = input;
    $scope.modal.hide();
   }
