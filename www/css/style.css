@@ -5,9 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-
-  background-color: white;
-
+  background-color: yellow;
 
 
   color:black;
@@ -37,9 +35,7 @@ height: 10px;
 width: 10px;
 padding: 5px;
 background-color: purple;
-display: inline-block;
-
-
+display:inline-block;
 }
 .button-Fertig
 {
