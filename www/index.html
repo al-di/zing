@@ -36,51 +36,55 @@
         </tr>
         <tr>
           <th>1.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 1)"> </a>{{eintraege.mo[1]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 1)"> </a>{{eintraege.di[1]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 1)"> </a>{{eintraege.mit[1]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 1)"> </a>{{eintraege.do[1]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 1)"> </a>{{eintraege.fr[1]}}</td>
+          <td>
+            <a class="zing-butten" ng-click="clicko('mo', 1)"> </a>
+            {{eintraege.fach.mo[1]}}
+            <img ng-if="eintraege.hausaufgaben.mo[1]" src="css/warnung.png">
+          </td>
+          <td><a class="zing-butten" ng-click="clicko('di', 1)"> </a>{{eintraege.fach.di[1]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 1)"> </a>{{eintraege.fach.mit[1]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 1)"> </a>{{eintraege.fach.do[1]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 1)"> </a>{{eintraege.fach.fr[1]}}</td>
         </tr>
         <tr>
           <th>2.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 2)"> </a>{{eintraege.mo[2]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 2)"> </a>{{eintraege.di[2]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 2)"> </a>{{eintraege.mit[2]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 2)"> </a>{{eintraege.do[2]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 2)"> </a>{{eintraege.fr[2]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mo', 2)"> </a>{{eintraege.fach.mo[2]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('di', 2)"> </a>{{eintraege.fach.di[2]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 2)"> </a>{{eintraege.fach.mit[2]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 2)"> </a>{{eintraege.fach.do[2]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 2)"> </a>{{eintraege.fach.fr[2]}}</td>
         </tr>
         <tr>
           <th>3.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 3)"> </a>{{eintraege.mo[3]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 3)"> </a>{{eintraege.di[3]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 3)"> </a>{{eintraege.mit[3]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 3)"> </a>{{eintraege.do[3]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 3)"> </a>{{eintraege.fr[3]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mo', 3)"> </a>{{eintraege.fach.mo[3]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('di', 3)"> </a>{{eintraege.fach.di[3]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 3)"> </a>{{eintraege.fach.mit[3]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 3)"> </a>{{eintraege.fach.do[3]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 3)"> </a>{{eintraege.fach.fr[3]}}</td>
         </tr>
         <tr>
           <th>4.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 4)"> </a>{{eintraege.mo[4]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 4)"> </a>{{eintraege.di[4]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 4)"> </a>{{eintraege.mit[4]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 4)"> </a>{{eintraege.do[4]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 4)"> </a>{{eintraege.fr[4]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mo', 4)"> </a>{{eintraege.fach.mo[4]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('di', 4)"> </a>{{eintraege.fach.di[4]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 4)"> </a>{{eintraege.fach.mit[4]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 4)"> </a>{{eintraege.fach.do[4]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 4)"> </a>{{eintraege.fach.fr[4]}}</td>
         </tr>
         <tr>
           <th>5.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 5)"> </a>{{eintraege.mo[5]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 5)"> </a>{{eintraege.di[5]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 5)"> </a>{{eintraege.mit[5]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 5)"> </a>{{eintraege.do[5]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 5)"> </a>{{eintraege.fr[5]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mo', 5)"> </a>{{eintraege.fach.mo[5]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('di', 5)"> </a>{{eintraege.fach.di[5]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 5)"> </a>{{eintraege.fach.mit[5]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 5)"> </a>{{eintraege.fach.do[5]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 5)"> </a>{{eintraege.fach.fr[5]}}</td>
         </tr>
         <tr>
           <th>6.</th>
-          <td><a class="zing-butten" ng-click="clicko('mo', 6)"> </a>{{eintraege.mo[6]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('di', 6)"> </a>{{eintraege.di[6]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('mit', 6)"> </a>{{eintraege.mit[6]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('do', 6)"> </a>{{eintraege.do[6]}}</td>
-          <td><a class="zing-butten" ng-click="clicko('fr', 6)"> </a>{{eintraege.fr[6]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mo', 6)"> </a>{{eintraege.fach.mo[6]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('di', 6)"> </a>{{eintraege.fach.di[6]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('mit', 6)"> </a>{{eintraege.fach.mit[6]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('do', 6)"> </a>{{eintraege.fach.do[6]}}</td>
+          <td><a class="zing-butten" ng-click="clicko('fr', 6)"> </a>{{eintraege.fach.fr[6]}}</td>
         </tr>
       </table>
       <p>aktuelle Zeit:{{zeit}} </p>

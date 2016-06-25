@@ -6,14 +6,22 @@
 angular.module('zing', ['ionic'])
 
 .controller('IndexCtrl', function($scope, $ionicModal) {
-  $scope.eintraege = {
+  $scope.eintraege = {};
+  $scope.eintraege.fach = {
+    mo: [],
+    di: [],
+    mit: [],
+    do: [],
+    fr: [],
+};
+  $scope.eintraege.hausaufgaben = {
     mo: [],
     di: [],
     mit: [],
     do: [],
     fr: [],
   };
-  $scope.fach = {
+  $scope.zelle = {
     tag: null,
     stunde: null,
     input: null,
@@ -27,13 +35,14 @@ angular.module('zing', ['ionic'])
   }, 500);
 
   $scope.clicko = function(tag, stunde) {
-    $scope.fach.tag = tag;
-    $scope.fach.input = $scope.eintraege[tag][stunde];
-    $scope.fach.stunde = stunde;
+    $scope.zelle.tag = tag;
+    $scope.zelle.input = $scope.eintraege.fach[tag][stunde];
+    $scope.zelle.stunde = stunde;
     $scope.modal.show();
   }
   $scope.add = function(input_1, input_2) {
-   $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = [input_1, input_2];
+   $scope.eintraege.fach[$scope.zelle.tag][$scope.zelle.stunde] = input_1;
+   $scope.eintraege.hausaufgaben[$scope.zelle.tag][$scope.zelle.stunde] = input_2;
    $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
