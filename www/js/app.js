@@ -54,7 +54,8 @@ angular.module('zing', ['ionic'])
     $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
-    scope: $scope
+    scope: $scope,
+    focusFirstInput: true
   }).then(function(modal) {
     $scope.modal = modal;
   })
