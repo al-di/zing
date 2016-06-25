@@ -35,15 +35,19 @@ angular.module('zing', ['ionic'])
   }, 500);
 
   $scope.clicko = function(tag, stunde) {
+    $scope.zelle.input_fach = $scope.eintraege.fach[tag][stunde];
+    $scope.zelle.input_hausaufgaben = $scope.eintraege.hausaufgaben[tag][stunde];
     $scope.zelle.tag = tag;
-    $scope.zelle.input = $scope.eintraege.fach[tag][stunde];
     $scope.zelle.stunde = stunde;
     $scope.modal.show();
+
+
   }
-  $scope.add = function(input_1, input_2) {
-   $scope.eintraege.fach[$scope.zelle.tag][$scope.zelle.stunde] = input_1;
-   $scope.eintraege.hausaufgaben[$scope.zelle.tag][$scope.zelle.stunde] = input_2;
-   $scope.modal.hide();
+  $scope.add = function(input_fach, input_hausaufgaben) {
+    console.log('add:', input_fach, input_hausaufgaben);
+    $scope.eintraege.fach[$scope.zelle.tag][$scope.zelle.stunde] = input_fach;
+    $scope.eintraege.hausaufgaben[$scope.zelle.tag][$scope.zelle.stunde] = input_hausaufgaben;
+    $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope
