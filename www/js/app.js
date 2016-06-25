@@ -43,6 +43,10 @@ angular.module('zing', ['ionic'])
 
 
   }
+  $scope.keineahnung = function(tag, stunde) {
+    console.log('keineahnung:', $scope.eintraege.hausaufgaben, tag, stunde)
+    $scope.ahnung = $scope.eintraege.hausaufgaben[tag][stunde];
+  }
   $scope.add = function(input_fach, input_hausaufgaben) {
     console.log('add:', input_fach, input_hausaufgaben);
     $scope.eintraege.fach[$scope.zelle.tag][$scope.zelle.stunde] = input_fach;

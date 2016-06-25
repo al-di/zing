@@ -39,7 +39,7 @@
           <td>
             <a class="zing-butten" ng-click="clicko('mo', 1)"> </a>
             {{eintraege.fach.mo[1]}}
-            <img ng-if="eintraege.hausaufgaben.mo[1]" src="css/warnung.png">
+            <img ng-if="eintraege.hausaufgaben.mo[1]" src="css/warnung.png" ng-click="keineahnung('mo', 1)">
           </td>
           <td>
             <a class="zing-butten" ng-click="clicko('di', 1)"> </a>
@@ -205,7 +205,11 @@
       </table>
       <p>aktuelle Zeit:{{zeit}} </p>
       <button class="button-Fertig" ng-click="clicko()">
-      Fertig
+        Fertig
+      </button>
+      <div class="hausaufgaben">
+        {{ahnung}}
+      </div>
     </ion-view>
     </button>
   </body>
