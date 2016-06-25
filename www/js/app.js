@@ -28,11 +28,12 @@ angular.module('zing', ['ionic'])
 
   $scope.clicko = function(tag, stunde) {
     $scope.fach.tag = tag;
+    $scope.fach.input = $scope.eintraege[tag][stunde];
     $scope.fach.stunde = stunde;
     $scope.modal.show();
   }
-  $scope.add = function(input) {
-   $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = input;
+  $scope.add = function(input_1, input_2) {
+   $scope.eintraege[$scope.fach.tag][$scope.fach.stunde] = [input_1, input_2];
    $scope.modal.hide();
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
