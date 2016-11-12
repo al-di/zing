@@ -6,6 +6,11 @@
 angular.module('zing', ['ionic'])
 
 .controller('IndexCtrl', function($scope, $ionicModal) {
+  $scope.eintraege = JSON.parse(localStorage.getItem("eintraege"));
+
+  console.log(localStorage.getItem("eintraege"))
+
+  if (localStorage.getItem("eintraege") == null){
   $scope.eintraege = {};
   $scope.eintraege.fach = {
     mo: [],
@@ -21,6 +26,7 @@ angular.module('zing', ['ionic'])
     do: [],
     fr: [],
   };
+}
   $scope.zelle = {
     tag: null,
     stunde: null,
@@ -52,6 +58,10 @@ angular.module('zing', ['ionic'])
     $scope.eintraege.fach[$scope.zelle.tag][$scope.zelle.stunde] = input_fach;
     $scope.eintraege.hausaufgaben[$scope.zelle.tag][$scope.zelle.stunde] = input_hausaufgaben;
     $scope.modal.hide();
+    localStorage.setItem('eintraege', JSON.stringify($scope.eintraege));
+    if (input_hausaufgaben == 0){
+      $scope.ahnung=""
+    }
   }
   $ionicModal.fromTemplateUrl('templates/add.html', {
     scope: $scope,
